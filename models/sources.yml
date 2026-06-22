@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: dtdi
+    database: debthor_dbs_interface
+    schema: dtdi
+    tables:
+      - name: case
+      - name: invoice
+      - name: case_attribute
+      - name: debtor
+      - name: Persons
+      - name: vw_cases_payment_information
+      - name: client_settings_commission_by_dpd
+
+  - name: reports
+    database: debthor_dbs_interface
+    schema: reports
+    tables:
+      - name: vw_ptp_ptpr_overview
