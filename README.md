@@ -1,4 +1,4 @@
-# dentalpar-commission-pipeline
+# client-commission-pipeline
 
 dbt + SQL Server pipeline for debt collection commission calculation — auto-corrects import errors, matches payments to invoices, and exports to Google Sheets.
 
