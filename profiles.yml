@@ -1,0 +1,12 @@
+comissao_516:
+  target: dev
+  outputs:
+    dev:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: SEU_SERVIDOR        # 🔥 troca aqui — ex: 192.168.1.100
+      port: 1433
+      database: debthor_dbs_interface
+      schema: dbt_marts
+      windows_login: true         # autenticação Windows/domínio
+      trust_cert: true
