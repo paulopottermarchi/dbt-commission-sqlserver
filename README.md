@@ -6,7 +6,7 @@ dbt + SQL Server pipeline for debt collection commission calculation — auto-co
 
 ## Problem
 
-Dentalpar's invoices arrive with corrupted due dates from the import system — day and month fields are swapped (`04.08.2026` instead of `08.04.2026`). On top of that, payment records have no direct link to individual invoices, making commission calculation unreliable.
+Client's invoices arrive with corrupted due dates from the import system — day and month fields are swapped (`04.08.2026` instead of `08.04.2026`). On top of that, payment records have no direct link to individual invoices, making commission calculation unreliable.
 
 This pipeline solves both problems automatically:
 - Detects and corrects inverted dates by cross-referencing the `Competencia` field
